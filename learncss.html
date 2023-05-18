@@ -2,14 +2,18 @@
 <head>
     <title>CSS</title>
     <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
         p,h2{
-            color: blue;
+            color:whitesmoke;
+            font-size: 20;
 
         }
         img{
             height:200px;
             border-radius: 10% 50%;
-            border-color: green red;
+            border-color:wheat red;
             border-width: 10px 5px;
             border-style: solid;
         padding:10px;
@@ -19,9 +23,9 @@
          /* border-image: url(images/download.jpg) 30 stretch;  */
         }
         h1{
-            color:blue;
+            color:wheat;
             border-style: dashed dotted solid none;
-            border-color: green red yellow;
+            border-color:azure red white;
             border-width: 10px 5px 2px ;
         }
         body{
@@ -32,12 +36,27 @@
             /* background-position: right; 
             background-size: cover; */
         }
+        .myclass{
+            font-size: 24px;
+            color: brown;
+        }
+        .class2{
+            background-color: yellowgreen;
+            font-size: 12px;
+        }
+        #myID{
+          font-family: 'Courier New', Courier, monospace;  
+        }
     </style>
 </head>
 <body>
-    <h1>my html page</h1>
+    <h1 class="myclass">my html page</h1>
     <h2 style="color:red;">welcome to html page</h2>
-    <p>This is our <b>learning</b> about html<br/>We are also going to many more <strong>fullstack</strong> courses as part of <i>full stack training</i></p>
+    <p class="myclass" id="myID">This is our <b>learning</b> about html<br/>We are also going to many more <strong>fullstack</strong> courses as part of <i>full stack training</i></p>
+    <p class="myclass class2">This is our <b>learning</b> about html<br/>We are also going to many more <strong>fullstack</strong> courses as part of <i>full stack training</i></p>
+    <p class="class2">This is our <b>learning</b> about html<br/>We are also going to many more <strong>fullstack</strong> courses as part of <i>full stack training</i></p>
+    
+    <p class="myclass">This is our <b>learning</b> about html<br/>We are also going to many more <strong>fullstack</strong> courses as part of <i>full stack training</i></p>
     <!-- image -->
     <img src="/images/flower.jpg" alt="tree" width="500px"><br/>
     <!-- hyperlink -->
